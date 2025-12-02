@@ -1,3 +1,9 @@
-import { PaginationExampleController } from "./PaginationExample.controller";
+import { PaginationExampleController } from './PaginationExample.controller';
+import { TransactionExampleController } from './TransactionExample.controller';
+import { AggregationPipelineController } from './AggregationPipelineExample.controller';
 
-export { PaginationExampleController };
+export {
+  PaginationExampleController,
+  TransactionExampleController,
+  AggregationPipelineController,
+};

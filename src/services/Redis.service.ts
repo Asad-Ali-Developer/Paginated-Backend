@@ -11,7 +11,7 @@ export class RedisService implements OnModuleDestroy {
       port: 6379,
     });
 
-    this.client.on('connect', () => console.log('✅ Redis connected'));
+    this.client.on('connect', () => console.log('Redis connected'));
     this.client.on('error', (err) => console.error('❌ Redis error', err));
   }
 

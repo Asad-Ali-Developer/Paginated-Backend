@@ -1,4 +1,11 @@
-import { PaginationExampleService } from "./PaginationExample.service";
-import { RedisService } from "./Redis.service";
+import { RedisService } from './Redis.service';
+import { PaginationExampleService } from './PaginationExample.service';
+import { TransactionExampleService } from './TransactionExample.service';
+import { AggregationPipelineExampleService } from './AggregationPiplelinExample.service';
 
-export { PaginationExampleService, RedisService };
+export {
+  RedisService,
+  PaginationExampleService,
+  TransactionExampleService,
+  AggregationPipelineExampleService,
+};

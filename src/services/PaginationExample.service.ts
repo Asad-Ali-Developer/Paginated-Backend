@@ -1,8 +1,8 @@
-import { Injectable, Logger } from '@nestjs/common';
-import { DatabaseProvider } from 'src/provider';
 import { Model } from 'mongoose';
 import { User, UserSchema } from 'src/schemas';
 import { RedisService } from './Redis.service';
+import { DatabaseProvider } from 'src/provider';
+import { Injectable, Logger } from '@nestjs/common';
 
 @Injectable()
 export class PaginationExampleService {
@@ -77,7 +77,7 @@ export class PaginationExampleService {
       const result = {
         page,
         limit,
-        next: `/api/v1/pagination/?page=${page + 1}&limit=${limit}`,
+        next: `?page=${page + 1}&limit=${limit}`,
         total,
         totalPages: Math.ceil(total / limit),
         data,
