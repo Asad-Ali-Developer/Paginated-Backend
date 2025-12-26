@@ -6,6 +6,7 @@ import { User, UserSchema } from 'src/schemas';
 import { TransactionExampleService } from 'src/services';
 
 @Module({
+  // Transaction Example
   imports: [
     MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
   ],
